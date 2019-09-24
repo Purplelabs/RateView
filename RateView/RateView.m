@@ -108,18 +108,31 @@
     CGFloat arm = rect.size.width;
     
     // Create a path for star shape
+//    CGMutablePathRef path = CGPathCreateMutable();
+//    CGPathMoveToPoint(path, NULL, arm*0.0, arm*0.35);
+//    CGPathAddLineToPoint(path, NULL, arm*0.35, arm*0.35);
+//    CGPathAddLineToPoint(path, NULL, arm*0.50, arm*0.0);
+//    CGPathAddLineToPoint(path, NULL, arm*0.65, arm*0.35);
+//    CGPathAddLineToPoint(path, NULL, arm*1.00, arm*0.35);
+//    CGPathAddLineToPoint(path, NULL, arm*0.75, arm*0.60);
+//    CGPathAddLineToPoint(path, NULL, arm*0.85, arm*1.00);
+//    CGPathAddLineToPoint(path, NULL, arm*0.50, arm*0.75);
+//    CGPathAddLineToPoint(path, NULL, arm*0.15, arm*1.00);
+//    CGPathAddLineToPoint(path, NULL, arm*0.25, arm*0.60);
+//    CGPathAddLineToPoint(path, NULL, arm*0.0, arm*0.35);
+ 
     CGMutablePathRef path = CGPathCreateMutable();
-    CGPathMoveToPoint(path, NULL, arm*0.0, arm*0.35);
-    CGPathAddLineToPoint(path, NULL, arm*0.35, arm*0.35);
-    CGPathAddLineToPoint(path, NULL, arm*0.50, arm*0.0);
-    CGPathAddLineToPoint(path, NULL, arm*0.65, arm*0.35);
-    CGPathAddLineToPoint(path, NULL, arm*1.00, arm*0.35);
-    CGPathAddLineToPoint(path, NULL, arm*0.75, arm*0.60);
-    CGPathAddLineToPoint(path, NULL, arm*0.85, arm*1.00);
-    CGPathAddLineToPoint(path, NULL, arm*0.50, arm*0.75);
-    CGPathAddLineToPoint(path, NULL, arm*0.15, arm*1.00);
-    CGPathAddLineToPoint(path, NULL, arm*0.25, arm*0.60);
-    CGPathAddLineToPoint(path, NULL, arm*0.0, arm*0.35);
+    CGPathMoveToPoint(path, NULL, arm*0.5, arm*0.0);
+    CGPathAddLineToPoint(path, NULL, arm*0.65, arm*0.29);
+    CGPathAddLineToPoint(path, NULL, arm*0.98, arm*0.35);
+    CGPathAddLineToPoint(path, NULL, arm*0.75, arm*0.58);
+    CGPathAddLineToPoint(path, NULL, arm*0.79, arm*0.9);
+    CGPathAddLineToPoint(path, NULL, arm*0.5, arm*0.76);
+    CGPathAddLineToPoint(path, NULL, arm*0.21, arm*0.9);
+    CGPathAddLineToPoint(path, NULL, arm*0.25, arm*0.58);
+    CGPathAddLineToPoint(path, NULL, arm*0.02, arm*0.35);
+    CGPathAddLineToPoint(path, NULL, arm*0.35, arm*0.29);
+    CGPathAddLineToPoint(path, NULL, arm*0.5, arm*0.0);
     
     /*
      * Add this path's copy(Only for border) to context, stroke it for the border to appear.
